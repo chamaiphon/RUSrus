@@ -7,6 +7,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import java.security.PrivateKey;
+
 public class SignUpActivity extends AppCompatActivity {
 
     //Explicit
@@ -14,6 +16,7 @@ public class SignUpActivity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton avata0RadioButton, avata1RadioButton,
             avata2RadioButton,avata3RadioButton, avata4RadioButton;
+    private String nameString,userString,passwordString,avataString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,11 @@ public class SignUpActivity extends AppCompatActivity {
     }   // Main Method
 
     public void clickSignUpSign(View view){
+
+        //Get Value from Edit Text
+        nameString = nameEditText.getText().toString().trim();
+        userString = userEditTeat.getText().toString().trim();
+        passwordString = passwordEditText.getText().toString().trim();
 
     }  // clickSignUp
 
